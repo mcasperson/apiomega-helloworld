@@ -7,7 +7,12 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.apiomega:build:0.0.4-SNAPSHOT'
+        /*
+            It is not typically recommended to use a '+' for the version of an
+            artifact. But while you are developing, this can be a handy trick
+            for always getting the latest version.
+         */
+        classpath 'com.apiomega:build:+'
     }
 }
 
