@@ -1,6 +1,7 @@
 package com.apiomega.api.helloworld.config;
 
 import com.apiomega.api.helloworld.api.Api;
+import com.apiomega.api.helloworld.docs.CustomApiListingResource;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -18,6 +19,8 @@ public class ApplicationConfig extends Application {
     public Set<Class<?>> getClasses() {
         final Set<Class<?>> classes = new HashSet<>();
         classes.add(Api.class);
+        classes.add(CustomApiListingResource.class);
+        classes.add(io.swagger.jaxrs.listing.SwaggerSerializers.class);
         return classes;
     }
 }
