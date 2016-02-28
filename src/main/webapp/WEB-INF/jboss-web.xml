@@ -1,10 +1,10 @@
 <jboss-web>
     <!--
         The context root needs to be in the following format:
-        author/version/vendor/device
+        author/vx.y.z/vendor/device
 
         This format is enforced by the com.apiomega.filter.UrlValidationFilter class,
         which is set up to filter all requests.
     -->
-    <context-root>apiomega/1.0/apiomega/sample</context-root>
+    <context-root>apiomega/v1.0.0/apiomega/sample</context-root>
 </jboss-web>
